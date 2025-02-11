@@ -1,45 +1,17 @@
-# rquest-omop-worker-workflows
+<p align="center">
+  <picture>
+    <img alt="Hutch Logo" src="https://raw.githubusercontent.com/Health-Informatics-UoN/hutch/refs/heads/main/website/public/images/hutch-logo-colour.svg" width="280"/>
+  </picture>
+</p>
 
-Source for workflow definitions for the open source RQuest OMOP Worker tool developed for Hutch/TRE-FX
+# hutch-workflows
 
-Note: ARM workflows are currently broken. x86 ones work.
+Workflow definitions for relevant Hutch Tools
 
-## Inputs
+## Bunny
 
-### Body
-Sample input payload:
+CWL Workflows for running the Hutch Bunny CLI one time.
 
-```json
-{
-  "task_id": "job-2023-01-13-14: 20: 38-<project>",
-  "project": "<project>",
-  "owner": "<owner>",
-  "cohort": {
-    "groups": [
-      {
-        "rules": [
-          {
-            "varname": "OMOP",
-            "varcat": "Person",
-            "type": "TEXT",
-            "oper": "=",
-            "value": "8507"
-          }
-        ],
-        "rules_oper": "AND"
-      }
-    ],
-    "groups_oper": "OR"
-  },
-  "collection": "<collection>",
-  "protocol_version": "<version>",
-  "char_salt": "<char_salt>",
-  "uuid": "<uuid>"
-}
-```
+This workflow is published on [WorkflowHub](https://workflowhub.eu/workflows/471).
 
-### Database access
-
-Currently this workflow requires inputs for connecting to the database it will run queries against.
-
-In future this may be moved to environment variables.
+It has been used in a number of research projects, such as: DARE TRE-FX, HDR UK Federated Analytics, EOSC-ENTRUST, DARE TREvolution...
