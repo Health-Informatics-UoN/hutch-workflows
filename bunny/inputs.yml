@@ -1,0 +1,12 @@
+#results: a_string  # type 'string' (optional)
+#result_modifiers: a_string  # type 'string' (optional)
+db_username: postgres  # type 'string'
+db_schema: omop  # type 'string'
+db_port: "5432"  # type 'string'
+db_password: postgres  # type 'string'
+db_host: host.docker.internal  # type 'string'
+db_driver: postgresql  # type 'string'
+db_database: omop # type 'string'
+body:  # type 'File'
+    class: File
+    path: body.json
