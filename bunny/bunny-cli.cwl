@@ -5,9 +5,9 @@ label: bunny-cli
 
 hints:
     DockerRequirement:
-        dockerPull: ghcr.io/health-informatics-uon/hutch/bunny:1.0.0-alpha.3
+        dockerPull: ghcr.io/health-informatics-uon/hutch/bunny:1.0.0-alpha.4
 
-baseCommand: [uv, run, bunny]
+baseCommand: [bunny]
 
 requirements:
   EnvVarRequirement:

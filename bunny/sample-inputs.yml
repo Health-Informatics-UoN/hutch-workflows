@@ -9,4 +9,4 @@ db_driver: postgresql  # type 'string'
 db_database: omop # type 'string'
 body:  # type 'File'
     class: File
-    path: body.json
+    path: sample-body.json
